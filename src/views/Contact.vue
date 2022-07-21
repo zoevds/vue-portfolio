@@ -9,18 +9,25 @@
             </div>
             <form
               action="https://formspree.io/f/mrgjnqjp"
+              method="post"
               class="form-horizontal"
             >
               <h3 class="title">Contact Me</h3>
               <div class="form-group">
                 <span class="input-icon"><i class="fa fa-user"></i></span>
-                <input class="form-control" type="text" placeholder="Name" />
+                <input
+                  class="form-control"
+                  type="text"
+                  name="FullName"
+                  placeholder="FullName"
+                />
               </div>
               <div class="form-group">
                 <span class="input-icon"><i class="fa fa-envelope"></i></span>
                 <input
                   class="form-control"
                   type="email"
+                  name="email"
                   placeholder="Email Address"
                 />
               </div>
@@ -29,6 +36,7 @@
                   class="form-control"
                   rows="4"
                   cols="120"
+                  name="message"
                   placeholder="Message"
                 ></textarea>
               </div>
@@ -37,6 +45,17 @@
               </button>
             </form>
           </div>
+        </div>
+        <div class="col-md-offset-3 col-md-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.267419708809!2d18.490509915034536!3d-33.98566428062407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bedd50e81%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1658399226899!5m2!1sen!2sza"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </div>
@@ -49,10 +68,13 @@ export default {};
 <style>
 .form-container {
   font-family: "Roboto", sans-serif;
-  padding: 40px 40px 0 0;
+  /* padding: 40px 40px 0 0; */
   position: relative;
   display: flex;
   justify-content: center;
+}
+.col-md-offset-3.col-md-6 {
+  margin-top: 4rem;
 }
 .form-container .form-icon {
   color: #084c61;
@@ -76,7 +98,8 @@ export default {};
   box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   width: 58.5rem;
-  height: 30rem;
+  height: 28rem;
+  /* margin-top: 3rem; */
 }
 .form-container .title {
   color: #b5b5b5;
@@ -90,7 +113,7 @@ export default {};
   content: "";
   background-color: #084c61;
   height: 3px;
-  width: 110px;
+  width: 595px;
   margin: 10px 0 0;
   display: block;
   clear: both;
@@ -138,7 +161,7 @@ export default {};
   color: #b5b5b5;
   font-size: 15px;
   font-weight: 400;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 .form-horizontal .btn {
   color: #d1d1d1;
@@ -167,4 +190,9 @@ export default {};
   color: #084c61;
   transform: translateX(3px);
 }
+/* @media (min-width: 768px) .col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+  margin-top: 3rem;
+} */
 </style>

@@ -37,8 +37,9 @@
                 <i class="fas fa-gem me-3"></i>Zoe Van Der Schyff
               </h6>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
-                illum inventore temporibus maxime repellendus magni!
+                My passion for tech started when I heard about the subject of
+                CAT in high school.That is when I developed an interest in
+                coding and styling web pages.
               </p>
             </div>
 

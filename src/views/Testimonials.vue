@@ -1,7 +1,7 @@
 <template>
   <section class="hero-section">
     <div class="row">
-      <h1>Testimonials</h1>
+      <h1 id="testimonial-title">Testimonials</h1>
       <div class="col">
         <div class="card-grid m-4 p-3">
           <div
@@ -11,7 +11,11 @@
             href="#"
           >
             <div class="card__background">
-              <img id="img" class="img-fluid" v-bind:src="testimonial.img" />
+              <img
+                id="testimonial-img"
+                class="img-fluid"
+                v-bind:src="testimonial.img"
+              />
             </div>
             <div class="card__content m-3 p-4">
               <p class="card__category">{{ testimonial.name }}</p>
@@ -73,9 +77,10 @@ export default {
         {
           id: 6,
           img: "https://i.postimg.cc/BvTZQnkT/jason-v3-1.jpg",
-          Name: "jason Wandrag",
+          Name: "Godwin Dzvapatsva",
           status: "Lecturer",
-          paragraph: "lorem ipsimed ur mom",
+          paragraph:
+            "I have known Zoe for the duration of her studies at Lifechoices. She grasps new concepts quickly and accepts constructive criticism and instruction concerning her work. She has good strength in HTML, CSS, Bootstrap and MySQL.  I recommend her. Godwin Dzvapatsva (Ph.D)-Head of Curriculum and Learning",
         },
         {
           id: 8,
@@ -87,10 +92,11 @@ export default {
         },
         {
           id: 9,
-          img: "",
+          img: "https://i.postimg.cc/nh4XLLLt/IMG-20220720-211835.jpg",
           Name: "Uzair Damonse",
           status: "Colleague",
-          paragraph: "lorem ipsimed ur mom",
+          paragraph:
+            "Zoë is an excellent web developer. Her personality is captivating and lights up any situation making her an asset to any project or team. ",
         },
       ],
     };
@@ -108,13 +114,17 @@ export default {
 #paragraph-text {
   font-size: 1rem;
 }
-#img {
+#testimonial-img {
   margin-top: 3rem;
   height: 465px;
   width: 400px;
   border-radius: 6px;
   background: darkslategrey;
   box-shadow: 3px 3px 5px #232c33, -3px -3px 5px #232c33;
+}
+#testimonial-title {
+  font-family: "Allura", cursive;
+  font-size: 4rem;
 }
 .card-grid {
   display: grid;
@@ -198,6 +208,11 @@ export default {
 @media (min-width: 960px) {
   .card-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 990px) {
+  #testimonial-title {
+    font-size: 3rem;
   }
 }
 </style>

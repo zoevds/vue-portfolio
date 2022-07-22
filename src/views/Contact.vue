@@ -3,6 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-offset-3 col-md-6">
+          <h1 id="contact-title">Contact Me</h1>
           <div class="form-container">
             <div class="form-icon">
               <i class="fa fa-envelope-open"></i>
@@ -47,15 +48,18 @@
           </div>
         </div>
         <div class="col-md-offset-3 col-md-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.267419708809!2d18.490509915034536!3d-33.98566428062407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bedd50e81%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1658399226899!5m2!1sen!2sza"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <h1 id="map-title">Location</h1>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.267419708809!2d18.490509915034536!3d-33.98566428062407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bedd50e81%3A0x9c746d268c8e0ad9!2sLife%20Choices!5e0!3m2!1sen!2sza!4v1658399226899!5m2!1sen!2sza"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -66,6 +70,16 @@
 export default {};
 </script>
 <style>
+.map-container {
+  widows: 100%;
+}
+iframe {
+  width: 90%;
+}
+#map-title {
+  font-family: "Allura", cursive;
+  font-size: 3rem;
+}
 .form-container {
   font-family: "Roboto", sans-serif;
   /* padding: 40px 40px 0 0; */
@@ -100,6 +114,10 @@ export default {};
   width: 58.5rem;
   height: 28rem;
   /* margin-top: 3rem; */
+}
+#contact-title {
+  font-family: "Allura", cursive;
+  font-size: 3rem;
 }
 .form-container .title {
   color: #b5b5b5;
@@ -195,4 +213,30 @@ export default {};
   width: 50%;
   margin-top: 3rem;
 } */
+@media only screen and (max-width: 990px) {
+  .form-container .form-horizontal {
+    width: 18.5rem;
+    height: 25rem;
+    /* margin-top: 3rem; */
+  }
+  .form-container .form-icon {
+    font-size: 20px;
+
+    line-height: 40px;
+    height: 50px;
+    width: 50px;
+
+    right: 2rem;
+  }
+  .col-md-offset-3.col-md-6 {
+    margin-top: 2rem;
+  }
+  .form-container .title:after {
+    width: 254px;
+  }
+  iframe {
+    width: 85%;
+    height: 25rem;
+  }
+}
 </style>

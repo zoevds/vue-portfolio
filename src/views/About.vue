@@ -8,7 +8,7 @@
       </div>
       <div class="col align-items-start">
         <h1 id="head1">About Myself</h1>
-        <div class="col-6">
+        <div class="col-12">
           <p>
             <span class="fw-bold text-dark">FullName:</span>Zoe Van Der Schyff
           </p>
@@ -20,6 +20,16 @@
           <p><span class="fw-bold text-dark">Age:</span>19</p>
 
           <p><span class="fw-bold text-dark">Gender:</span>Female</p>
+
+          <h1 id="col-heading">My interests</h1>
+
+          <p>
+            Some of my hobbies are reading books, drawing/painting , action
+            movies, soccer.I am an introverted person. I love reading.My passion
+            for tech started when I heard about the subject of CAT in high
+            school.That is when I developed an interest in coding and styling
+            web pages.
+          </p>
         </div>
         <!-- SERVICE BOXES -->
         <div class="container">
@@ -148,8 +158,10 @@ body {
   background-color: #d7c8c1;
 }
 #head-1 {
+  font-family: "Allura", cursive;
   margin-bottom: 2rem;
-  margin-top: 0%;
+  margin-top: 1rem;
+  font-size: 4rem;
 }
 #about {
   background-color: #f6f4f4;
@@ -163,11 +175,18 @@ body {
   border-radius: 4px;
   box-shadow: 3px 3px 5px #232c33, -3px -3px 5px #232c33;
 }
+#col-heading {
+  font-family: "Allura", cursive;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+}
 #head1 {
   font-family: "Allura", cursive;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  font-size: 4rem;
 }
 
 /* SERVICE BOXES */
@@ -490,6 +509,24 @@ body {
 @keyframes animate-positive {
   0% {
     width: 0%;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #head-1 {
+    margin-bottom: 0%;
+
+    font-size: 3rem;
+  }
+  #img1 {
+    margin-top: 2rem;
+    height: 350px;
+    width: 250px;
+  }
+  #head1 {
+    font-size: 3rem;
+  }
+  .col-6 {
+    margin-left: 5rem;
   }
 }
 </style>

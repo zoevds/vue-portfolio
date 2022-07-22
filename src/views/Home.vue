@@ -4,7 +4,7 @@
       <div class="row align-items-start">
         <div class="col">
           <div id="divv"></div>
-          <h1>Hey, I'm Zoe Van Der Schyff</h1>
+          <h1 id="home-title">Hey, I'm Zoe Van Der Schyff</h1>
           <div class="text-effect">
             <span>Aspiring Full Stack Developer</span>
           </div>
@@ -40,7 +40,7 @@ export default {};
 body {
   background-color: #d7c8c1;
 }
-h1 {
+#home-title {
   font-family: "Allura", cursive;
   font-size: 4rem;
   display: flex;
@@ -117,8 +117,23 @@ h2 {
   font-family: "Allura", cursive;
   font-size: 3rem;
 }
-/* @media only screen and (max-width: 580px) {
-  #img {
+@media only screen and (max-width: 580px) {
+  img#img {
+    width: 15rem;
+    height: 12rem;
   }
-} */
+  #home-title {
+    font-size: 2rem;
+
+    margin-top: -32rem;
+  }
+  .text-effect span {
+    font-size: 1.5rem;
+  }
+  #divv {
+    height: 35rem;
+    width: 0.2rem;
+    margin-top: 1rem;
+  }
+}
 </style>

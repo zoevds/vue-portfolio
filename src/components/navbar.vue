@@ -74,14 +74,7 @@ export default {
   border: none;
   background: transparent;
 }
-#goat-img {
-  width: 8rem;
-  height: auto;
-  transition: all ease-in-out 0.5s;
-}
-#goat-img:hover {
-  filter: invert();
-}
+
 .items {
   padding: 0.5rem;
   font-size: 3rem;

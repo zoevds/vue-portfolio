@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div>
+    <div id="nav-cont">
       <button id="menu-btn" type="button" @click="toggleNav()">
         <i id="font1" class="fa-solid fa-circle-down"></i>
       </button>
@@ -45,6 +45,9 @@ export default {
 };
 </script>
 <style scoped>
+#nav-cont {
+  cursor: pointer;
+}
 #font2 {
   color: #084c61;
   size: 40px;
@@ -85,12 +88,14 @@ export default {
   text-decoration: none;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .items:hover {
   color: #084c61;
 }
 
 .nav-links {
+  cursor: pointer;
   z-index: 1000;
   position: fixed;
   top: -150%;

@@ -149,8 +149,7 @@ a {
 .nes-dialog {
   padding: 1.5rem 2rem;
   border: none;
-  /* display: flex; */
-  /* align-items: center; */
+
   position: fixed;
   top: 4%;
   left: 24%;

@@ -108,7 +108,7 @@
   <section id="resume">
     <div class="container">
       <div class="row">
-        <h1>Resume</h1>
+        <h1 id="resume-title">Resume</h1>
         <div class="col-md-12">
           <div class="main-timeline">
             <div class="timeline">
@@ -181,6 +181,12 @@ body {
   display: flex;
   justify-content: center;
 }
+#resume-title {
+  font-family: "Allura", cursive;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
 #head1 {
   font-family: "Allura", cursive;
   display: flex;
@@ -246,6 +252,7 @@ body {
 }
 .main-timeline .timeline:before,
 .main-timeline .timeline:after {
+  cursor: pointer;
   content: "";
   height: 25px;
   width: 25px;
@@ -259,6 +266,7 @@ body {
   z-index: -1;
 }
 .main-timeline .timeline:after {
+  cursor: pointer;
   width: 35%;
   height: 100px;
   border-radius: 0;
@@ -273,6 +281,7 @@ body {
   display: block;
 }
 .main-timeline .timeline-content:hover {
+  cursor: pointer;
   text-decoration: none;
 }
 .main-timeline .timeline-content:after {
@@ -281,6 +290,7 @@ body {
   clear: both;
 }
 .main-timeline .content {
+  cursor: pointer;
   display: inline-block;
   float: left;
   width: 40%;
@@ -288,12 +298,14 @@ body {
   position: relative;
 }
 .main-timeline .description {
+  cursor: pointer;
   font-size: 15px;
   letter-spacing: 1px;
   margin: 0;
 }
 .main-timeline .title {
   font-size: 35px;
+  cursor: pointer;
   font-weight: 200;
   color: #084c61;
   text-transform: uppercase;
@@ -366,22 +378,7 @@ body {
 .main-timeline .timeline:nth-child(4n + 3):before {
   background-color: #084c61;
 }
-/* .main-timeline .timeline:nth-child(4n + 3):after {
-  background: linear-gradient(
-    to right,
-    #00b09e,
-    #00b09e,
-    #00b09e,
-    #00b09e,
-    #00b09e,
-    transparent,
-    #868686
-  );
-} */
-/* .main-timeline .timeline:nth-child(4n + 3) .timeline-icon {
-  color: #00b09e;
-  border-color: #00b09e;
-} */
+
 .main-timeline .timeline:nth-child(4n + 3) .title {
   color: #084c61;
 }
@@ -418,11 +415,13 @@ body {
     display: none;
   }
   .main-timeline .timeline {
+    cursor: pointer;
     padding-top: 180px;
     margin-bottom: 20px;
   }
   .main-timeline .timeline:nth-child(even):after,
   .main-timeline .timeline:after {
+    cursor: pointer;
     height: 170px;
     width: 100px;
     top: 0;

@@ -214,5 +214,20 @@ export default {
   #testimonial-title {
     font-size: 3rem;
   }
+  .p-3 {
+    padding: 1.5rem !important;
+  }
+
+  .m-4 {
+    margin: 0rem !important;
+  }
+  #testimonial-img {
+    margin-top: 3rem;
+    height: 465px;
+    width: 400px;
+    border-radius: 2px;
+    background: darkslategrey;
+    box-shadow: 3px 3px 5px #232c33, -3px -3px 5px #232c33;
+  }
 }
 </style>

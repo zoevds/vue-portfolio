@@ -105,6 +105,7 @@ export default {};
   /* background-color: #f6f4f4; */
   min-height: 40vh;
   margin: 1.6rem;
+  cursor: pointer;
 }
 #col1 {
   font-family: "Pathway Gothic One", sans-serif;

@@ -29,6 +29,9 @@ export default {
 nav {
   padding: 30px;
 }
+a {
+  cursor: pointer;
+}
 
 nav a {
   font-weight: bold;

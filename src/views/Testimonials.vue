@@ -76,7 +76,7 @@ export default {
         },
         {
           id: 6,
-          img: "https://i.postimg.cc/BvTZQnkT/jason-v3-1.jpg",
+          img: "https://i.postimg.cc/mDsWVQfP/godwin-2022.jpg",
           Name: "Godwin Dzvapatsva",
           status: "Lecturer",
           paragraph:
@@ -229,5 +229,7 @@ export default {
     background: darkslategrey;
     box-shadow: 3px 3px 5px #232c33, -3px -3px 5px #232c33;
   }
+}
+@media only screen and (max-width: 820px) {
 }
 </style>

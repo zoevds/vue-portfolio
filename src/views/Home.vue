@@ -1,74 +1,72 @@
 <template>
   <section id="landing" class="p-2">
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col">
-          <div id="divv"></div>
-          <h1 id="home-title">Hey, I'm Zoe Van Der Schyff</h1>
-          <div class="text-effect">
-            <span>Aspiring Full Stack Developer</span>
-          </div>
-        </div>
-        <div class="col">
-          <img id="img" alt="photo" src="../assets/picture1.jpg" />
-        </div>
-      </div>
+  
+   <div id="block">
+    <img id="self-image" src="https://i.postimg.cc/rs4TVfQ9/IMG-20220916-WA0045.jpg"/>
+    
+   </div>
+  
+   <div class="animated-title">
+  <div class="text-top">
+    <div>
+      <span>Hi ,</span>
+      <span>My Name is </span>
     </div>
+  </div>
+  <div class="text-bottom">
+    <div>Zoe Van Der Schyff</div>
+  </div>
+</div>
+
+ 
+   
   </section>
   <!-- section end -->
   <section id="description">
-    <h2>Contact Details</h2>
-    <p>
-      If you would like to get hold of me, you can contact me via these socials
-    </p>
-
-    <p><span class="fw-bold text-dark">Contact:</span>+(27)81 574 1383</p>
-
-    <p>
-      <span class="fw-bold text-dark">Email:</span>zoevanderschyff13@gmail.com
-    </p>
-
-    <p><span class="fw-bold text-dark">Github:</span>https://github.com/</p>
-
-    <p><span class="fw-bold text-dark">Linkedin:</span></p>
+ <h1 id="info-head">Description</h1>
+ <p id="pgh"> This is my digital portfolio, if you are interested to know more about me,
+  go to
+   <span><button id="about-btn"><router-link to="/about">About Me</router-link></button></span>
+ </p>
   </section>
 </template>
 <script>
 export default {};
 </script>
 <style>
-body {
-  background-color: #d7c8c1;
+
+
+/* .words {
+  color: white;
+  font-size: 0;
+  line-height: 1.5;
 }
-#home-title {
-  font-family: "Allura", cursive;
-  font-size: 4rem;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  margin-top: -29rem;
-}
-.text-effect {
-  color: #084c61;
-  font-family: "Pathway Gothic One", sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
-  text-align: center;
-  perspective: 700px;
-}
-.text-effect span {
+
+.words span {
+  font-size: 5rem;
   display: inline-block;
-  transform-origin: 0 10%;
-  transform-style: preserve-3d;
-  animation: flip 3s infinite linear;
+  animation: move 3s ease-in-out infinite;
+} */
+#block{
+  min-height: 70vh;
+    background-color: lightgrey;
+    margin: -1em;
 }
-@keyframes flip {
-  35% {
-    transform: rotateX(70deg);
-  }
-  65% {
-    transform: rotateX(-70deg);
-  }
+#info-head{
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+#pgh{
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+#about-btn{
+background-color: black;
+color: white;
+border-radius: 4px;
 }
 @media only screen and (max-width: 990px) {
   .text-effect {
@@ -91,27 +89,29 @@ body {
     line-height: 35px;
   }
 }
-#landing {
-  background-color: #f6f4f4;
-  min-height: 100vh;
-  margin: 1.6rem;
+
+#self-image {
+ 
+margin-top: 5rem;
+  background-position: left top;
+object-fit:cover;
+  padding: 20px;
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  margin-bottom: 3rem;
 }
-#img {
-  margin-top: 3rem;
-  height: 500px;
-  width: 400px;
-  border-radius: 6px;
-  background: darkslategrey;
-  box-shadow: 6px 6px 10px #232c33, -6px -6px 10px #232c33;
-}
-#divv {
-  background-color: #232c33;
-  height: 37rem;
-  width: 0.5rem;
-  margin-top: 3rem;
-}
+
 #description {
-  min-height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(https://i.postimg.cc/SRPBH38r/plane-g381b8319d-1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 60vh;
+ 
 }
 h2 {
   font-family: "Allura", cursive;
@@ -130,10 +130,110 @@ h2 {
   .text-effect span {
     font-size: 1.5rem;
   }
-  #divv {
-    height: 35rem;
-    width: 0.2rem;
-    margin-top: 1rem;
+
+}
+/* name animations */
+
+ @keyframes showTopText {
+	 0% {
+		 transform: translate3d(0, 100%, 0);
+	}
+	 40%, 60% {
+		 transform: translate3d(0, 50%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+ @keyframes showBottomText {
+	 0% {
+		 transform: translate3d(0, -100%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+ .animated-title {
+	 color: #222;
+	 font-family: 'Playfair Display', serif;
+	 height: 90vmin;
+	 left: 50%;
+	 position: absolute;
+	 top: 47%;
+	 transform: translate(-50%, -50%);
+	 width: 100vmin;
+}
+ .animated-title > div {
+	 height: 50%;
+	 overflow: hidden;
+	 position: absolute;
+	 width: 100%;
+}
+ .animated-title > div div {
+	 font-size: 7vmin;
+	 padding: 2vmin 0;
+	 position: absolute;
+}
+ .animated-title > div div span {
+	 display: block;
+}
+ .animated-title > div.text-top {
+	 border-bottom: 0.5vmin solid #000;
+	 top: 0;
+}
+ .animated-title > div.text-top div {
+	 animation: showTopText 1s;
+	 animation-delay: 0.5s;
+	 animation-fill-mode: forwards;
+	 bottom: 0;
+	 transform: translate(0, 100%);
+}
+ .animated-title > div.text-top div span:first-child {
+	 color: #767676;
+}
+ .animated-title > div.text-bottom {
+	 bottom: 0;
+}
+ .animated-title > div.text-bottom div {
+	 animation: showBottomText 0.5s;
+	 animation-delay: 1.75s;
+	 animation-fill-mode: forwards;
+	 top: 0;
+	 transform: translate(0, -100%);
+}
+/* @keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
   }
 }
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 3s;
+} */
 </style>

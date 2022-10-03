@@ -1,12 +1,13 @@
 <template>
   <header>
+   
     <div id="nav-cont">
       <button id="menu-btn" type="button" @click="toggleNav()">
-        <i id="font1" class="fa-solid fa-circle-down"></i>
+        <i class="fa-solid fa-bars"></i>
       </button>
     </div>
   </header>
-  <nav class="nav-links">
+  <nav id="navbar" class="nav-links">
     <router-link class="items" @click="toggleNav()" to="/">Home</router-link>
     <router-link class="items" @click="toggleNav()" to="/about"
       >About</router-link
@@ -48,6 +49,9 @@ export default {
 #nav-cont {
   cursor: pointer;
 }
+/* #navbar{
+  background-color: black;
+} */
 #font2 {
   color: #084c61;
   size: 40px;
@@ -67,7 +71,7 @@ export default {
   color: 084c61;
 }
 #menu-btn {
-  color: #084c61;
+  color:black;
   z-index: 90;
   font-size: 2rem;
   top: 2rem;

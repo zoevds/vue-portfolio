@@ -329,5 +329,6 @@ i.fa-brands.fa-linkedin {
     bottom: 0;
     margin-left: 1rem;
 }
+
 }
 </style>

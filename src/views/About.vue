@@ -5,31 +5,36 @@
      <div id="space">
       <h1 id="about-head1">About Myself</h1>
      </div>
-      <div class="col align-items-start">
-       
-        <div class="col-12">
-          <p>
-            <span class="fw-bold text-dark">FullName:</span>Zoe Van Der Schyff
-          </p>
+     
+       <div class="row">
 
-          <p>
-            <span class="fw-bold text-dark">Date of birth:</span>13th April 2003
-          </p>
+         <div class="col">
+           <p>
+             <span class="fw-bold text-dark">FullName:</span>Zoe Van Der Schyff
+           </p>
+ 
+           <p>
+             <span class="fw-bold text-dark">Date of birth:</span>13th April 2003
+           </p>
+ 
+           <p><span class="fw-bold text-dark">Age:</span>19</p>
+ 
+           <p><span class="fw-bold text-dark">Gender:</span>Female</p>
+         
+       </div>
+       <div class="col">
 
-          <p><span class="fw-bold text-dark">Age:</span>19</p>
+         <h1 id="col-heading">My interests</h1>
 
-          <p><span class="fw-bold text-dark">Gender:</span>Female</p>
-
-          <h1 id="col-heading">My interests</h1>
-
-          <p>
-            Some of my hobbies are reading books, drawing/painting , action
-            movies, soccer.I am an introverted person. I love reading.My passion
-            for tech started when I heard about the subject of CAT in high
-            school.That is when I developed an interest in coding and styling
-            web pages.
-          </p>
-        </div>
+         <p>
+           Some of my hobbies are reading books, drawing/painting , action
+           movies, soccer.I am an introverted person. I love reading.My passion
+           for tech started when I heard about the subject of CAT in high
+           school.That is when I developed an interest in coding and styling
+           web pages.
+         </p>
+       </div>
+      </div>
         <!-- SERVICE BOXES -->
         <div class="container">
           <div class="row">
@@ -99,7 +104,7 @@
             </div>
           </div>
         </div>
-      </div>
+    
     <!-- </div> -->
 
     <!-- </div> -->
@@ -158,8 +163,7 @@ export default {};
 } */
 #about-head1 {
   font-family: 'Playfair Display', serif;
-  /* margin-bottom: 2rem; */
-  /* margin-top: 4rem; */
+  padding: 3rem;
   font-size: 4rem;
   display: flex;
   justify-content: center;

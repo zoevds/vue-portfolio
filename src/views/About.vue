@@ -4,30 +4,39 @@
     <!-- <div class="row align-items-start"> -->
      <div id="space">
       <h1 id="about-head1">About Myself</h1>
+      <!-- <p>
+             <span id="spaninfo" class="fw-bold text-dark">FullName:</span>Zoe Van Der Schyff
+           </p>
+ 
+           <p>
+             <span id="spaninfo" class="fw-bold text-dark">Date of birth:</span>13th April 2003
+           </p>
+ 
+           <p><span id="spaninfo" class="fw-bold text-dark">Age:</span>19</p>
+ 
+           <p><span id="spaninfo" class="fw-bold text-dark">Gender:</span>Female</p> -->
      </div>
      
        <div class="row">
 
          <div class="col">
-           <p>
-             <span class="fw-bold text-dark">FullName:</span>Zoe Van Der Schyff
-           </p>
- 
-           <p>
-             <span class="fw-bold text-dark">Date of birth:</span>13th April 2003
-           </p>
- 
-           <p><span class="fw-bold text-dark">Age:</span>19</p>
- 
-           <p><span class="fw-bold text-dark">Gender:</span>Female</p>
-         
+           <h1 id="abit-about">Abit about Myself</h1>
+         <p id="myself-pgh"> My name is Zoe Van der Schyff,I am an Aspiring Full Stack Developer , 
+          who is interested in technology and developing web applications. 
+          I am a resilient person, who always gets back up after a downfall. 
+          I am driven to become independent and I am a very organized and structured person.
+           My strength is working according to schedule to achieve what I set for myself.
+            I am creative in designing, drawing, painting and I enjoy creating new things using old products.
+             </p>
        </div>
        <div class="col">
 
          <h1 id="col-heading">My interests</h1>
 
          <p>
-           Some of my hobbies are reading books, drawing/painting , action
+           Some of my hobbies are reading books, 
+           I am an avid reader, I enjoy reading books that will teach me, such as books about the marketing 
+             structure in South Africa and other entrepreneurial books to upskill myself where marketing is concerned. I also enjoy drawing/painting , action
            movies, soccer.I am an introverted person. I love reading.My passion
            for tech started when I heard about the subject of CAT in high
            school.That is when I developed an interest in coding and styling
@@ -36,7 +45,8 @@
        </div>
       </div>
         <!-- SERVICE BOXES -->
-        <div class="container">
+        <section id="skills-pg">
+                  <div class="container">
           <div class="row">
             <div class="col-md-3 col-sm-6">
               <div class="serviceBox">
@@ -104,17 +114,19 @@
             </div>
           </div>
         </div>
-    
+      </section>
+
     <!-- </div> -->
 
     <!-- </div> -->
   </section>
-  <!-- <section id="resume">
+  <section id="resume">
     <div class="container">
       <div class="row">
         <h1 id="resume-title">Resume</h1>
         <div class="col-md-12">
           <div class="main-timeline">
+            <!-- 1 -->
             <div class="timeline">
               <a href="#" class="timeline-content">
                 <div class="timeline-icon">
@@ -131,6 +143,7 @@
                 </div>
               </a>
             </div>
+            <!-- 2 -->
             <div class="timeline">
               <a href="#" class="timeline-content">
                 <div class="timeline-icon">
@@ -148,11 +161,26 @@
                 </div>
               </a>
             </div>
+            <!-- 3 -->
+            <div class="timeline">
+              <a href="#" class="timeline-content">
+                <div class="timeline-icon">
+                  <i class="fa fa-rocket"></i>
+                </div>
+                <div class="content">
+                  <h3 class="title">Life Choices Coding Academy</h3>
+                  <p class="description">
+                  I Graduated Life Choices Coding Academy with a pass rate of 80%, all my modules pass rate was above 60%. 
+                  The modules that i did was HTML5, CSS3, BOOTSTRAP, JAVASCRIPT, VUE.JS, MYSQL, NODE.JS.
+                  </p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section> -->
+  </section> 
 </template>
 <script>
 export default {};
@@ -169,11 +197,15 @@ export default {};
   justify-content: center;
   align-items: center;
 }
+#abit-about{
+  font-family: 'Playfair Display', serif;
+}
 #space {
   background-color: lightgray;
   min-height: 50vh;
   /* margin: 1.6rem; */
 }
+
 #img1 {
   margin-top: 6rem;
   height: 400px;
@@ -187,11 +219,28 @@ export default {};
   display: flex;
   justify-content: center;
 }
+#myself-pgh{
+padding: 1rem;
+}
+#skills-pg{
+  min-height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(https://i.postimg.cc/R0qQT0S8/water-gfc53b6c62-1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 #resume-title {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
   display: flex;
   justify-content: center;
+}
+#spaninfo{
+  display: flex;
+  justify-content:flex-start;
+  margin-left: 35rem;
 }
 #head1 {
   font-family: 'Playfair Display', serif;
@@ -203,7 +252,7 @@ export default {};
 
 /* SERVICE BOXES */
 .serviceBox {
-  color: #666;
+  color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
@@ -216,17 +265,17 @@ export default {};
   font-family: "Pathway Gothic One", sans-serif;
 }
 .serviceBox .service-icon {
-  color: #232c33;
+  color: white;
   font-size: 50px;
   line-height: 130px;
   height: 130px;
   width: 130px;
   margin: 0 auto 30px;
   border-radius: 4px;
-  box-shadow: 6px 6px 10px #232c33, -6px -6px 10px #fff;
+  box-shadow: 6px 6px 10px white, -6px -6px 10px #fff;
 }
 .serviceBox .description {
-  color: #777;
+  color: white;
   font-size: 13px;
   letter-spacing: 0.5px;
   line-height: 22px;
@@ -533,5 +582,21 @@ export default {};
   .col-6 {
     margin-left: 5rem;
   }
+ 
+}
+@media only screen and (max-width: 400px){
+  #about-head1 {
+    
+    padding: 4.5rem;
+    font-size: 3rem;
+   
+    margin-left: -2rem;
+}
+#space {
+    background-color: lightgray;
+    min-height: 50vh;
+   
+    margin-right: -2rem;
+}
 }
 </style>

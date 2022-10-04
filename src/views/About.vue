@@ -161,10 +161,13 @@ export default {};
   /* margin-bottom: 2rem; */
   /* margin-top: 4rem; */
   font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #space {
   background-color: lightgray;
-  min-height: 70vh;
+  min-height: 50vh;
   /* margin: 1.6rem; */
 }
 #img1 {

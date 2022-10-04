@@ -2,7 +2,20 @@
   <section id="landing" class="p-2">
   
    <div id="block">
-    <img id="self-image" src="https://i.postimg.cc/rs4TVfQ9/IMG-20220916-WA0045.jpg"/>
+    <div class="row">
+      <div class="col">
+
+<img id="self-image" src="https://i.postimg.cc/rs4TVfQ9/IMG-20220916-WA0045.jpg"/>
+</div>
+<div id="socials" class="col">
+ 
+      <a href="https://www.linkedin.com/in/zoe-van-der-schyff-67377a248/">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    
+</div>
+
+    </div>
     
    </div>
   
@@ -17,9 +30,6 @@
     <div>Zoe Van Der Schyff</div>
   </div>
 </div>
-
- 
-   
   </section>
   <!-- section end -->
   <section id="description">
@@ -51,6 +61,15 @@ export default {};
   min-height: 70vh;
     background-color: lightgrey;
     margin: -1rem;
+}
+i.fa-brands.fa-linkedin {
+    margin-left: 28rem;
+}
+#socials{
+  display: flex;
+font-size: 2rem;
+margin-top: 8rem;
+margin-left: 30rem;
 }
 #info-head{
   color: white;
@@ -136,14 +155,16 @@ border-radius: 4px;
 
 #self-image {
   box-shadow: 2px 1px 4px black;
-margin-top: 5rem;
-  background-position: left top;
-object-fit:cover;
-  padding: 20px;
-  width: 270px;
-  height: 270px;
-  border-radius: 50%;
-  margin-bottom: 3rem;
+    margin-top: 11rem;
+    background-position: left top;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding: 20px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    margin-right: -5rem;
 }
 
 #description {
@@ -222,8 +243,9 @@ h2 {
 	 display: block;
 }
  .animated-title > div.text-top {
-	 border-bottom: 0.5vmin solid #000;
-	 top: 0;
+  border-bottom: 0.5vmin solid #000;
+    top: 0;
+    margin-left: 10rem;
 }
  .animated-title > div.text-top div {
 	 animation: showTopText 1s;
@@ -237,6 +259,8 @@ h2 {
 }
  .animated-title > div.text-bottom {
 	 bottom: 0;
+   margin-left: 10rem;
+
 }
  .animated-title > div.text-bottom div {
 	 animation: showBottomText 0.5s;
@@ -253,7 +277,7 @@ h2 {
     padding: 20px;
     width: 220px;
     height: 220px;
-   
+    margin-right: 1rem;
     margin-bottom: 3rem;
 }
 .animated-title > div.text-top div span:first-child {
@@ -296,6 +320,14 @@ h2 {
 #about-btn {
   margin-right: 3.5rem;
     font-size: 1rem;
+}
+i.fa-brands.fa-linkedin {
+  margin-left: -35rem;
+  font-size: 1.5rem;
+}
+.animated-title > div.text-bottom {
+    bottom: 0;
+    margin-left: 1rem;
 }
 }
 </style>

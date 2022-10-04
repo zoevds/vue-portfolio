@@ -1,13 +1,12 @@
 <template>
   <section id="about" class="about">
     <!-- <div class="container"> -->
-    <div class="row align-items-start">
-      <div class="col">
-        <h1 id="head-1">Myself</h1>
-        <img id="img1" alt="zoe" src="../assets/Zoe.jpg" />
-      </div>
+    <!-- <div class="row align-items-start"> -->
+     <div id="space">
+      <h1 id="about-head1">About Myself</h1>
+     </div>
       <div class="col align-items-start">
-        <h1 id="head1">About Myself</h1>
+       
         <div class="col-12">
           <p>
             <span class="fw-bold text-dark">FullName:</span>Zoe Van Der Schyff
@@ -101,11 +100,11 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
     <!-- </div> -->
   </section>
-  <section id="resume">
+  <!-- <section id="resume">
     <div class="container">
       <div class="row">
         <h1 id="resume-title">Resume</h1>
@@ -148,25 +147,25 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
 <script>
 export default {};
 </script>
 <style>
-body {
+/* body {
   background-color: #d7c8c1;
-}
-#head-1 {
-  font-family: "Allura", cursive;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+} */
+#about-head1 {
+  font-family: 'Playfair Display', serif;
+  /* margin-bottom: 2rem; */
+  /* margin-top: 4rem; */
   font-size: 4rem;
 }
-#about {
-  background-color: #f6f4f4;
-  min-height: 100vh;
-  margin: 1.6rem;
+#space {
+  background-color: lightgray;
+  min-height: 70vh;
+  /* margin: 1.6rem; */
 }
 #img1 {
   margin-top: 6rem;
@@ -176,19 +175,19 @@ body {
   box-shadow: 3px 3px 5px #232c33, -3px -3px 5px #232c33;
 }
 #col-heading {
-  font-family: "Allura", cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 3rem;
   display: flex;
   justify-content: center;
 }
 #resume-title {
-  font-family: "Allura", cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 4rem;
   display: flex;
   justify-content: center;
 }
 #head1 {
-  font-family: "Allura", cursive;
+  font-family: 'Playfair Display', serif;
   display: flex;
   justify-content: center;
   margin-top: 1rem;

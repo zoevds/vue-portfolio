@@ -26,7 +26,7 @@
  <h1 id="info-head">Description</h1>
  <p id="pgh"> This is my digital portfolio, if you are interested to know more about me,
   go to
-   <span><button id="about-btn"><router-link to="/about">About Me</router-link></button></span>
+   <span><button id="about-btn"><router-link id="about-router" to="/about">About Me</router-link></button></span>
  </p>
   </section>
 </template>
@@ -50,24 +50,68 @@ export default {};
 #block{
   min-height: 70vh;
     background-color: lightgrey;
-    margin: -1em;
+    margin: -1rem;
 }
 #info-head{
   color: white;
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
+  padding: 3rem;
 }
 #pgh{
   color: white;
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
 }
+#about-router{
+  text-decoration: none;
+}
+#about-btn {
+  border-radius: 4px;
+  background-color: lightgrey;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
 
+#about-btn{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#about-btn:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#about-btn:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+#about-btn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+/* 
 #about-btn{
 background-color: black;
 color: white;
 border-radius: 4px;
-}
+} */
 @media only screen and (max-width: 990px) {
   .text-effect {
     font-size: 90px;
@@ -91,7 +135,7 @@ border-radius: 4px;
 }
 
 #self-image {
- 
+  box-shadow: 2px 1px 4px black;
 margin-top: 5rem;
   background-position: left top;
 object-fit:cover;
@@ -201,39 +245,57 @@ h2 {
 	 top: 0;
 	 transform: translate(0, -100%);
 }
-/* @keyframes move {
-  0% {
-    transform: translate(-30%, 0);
-  }
-  50% {
-    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
-  }
-  100% {
-    transform: translate(30%, 0);
-  }
-}
 
-.words span:nth-child(2) {
-  animation-delay: 0.5s;
+@media only screen and (max-width: 800px){
+  #self-image {
+    margin-top: 3.5rem;
+   
+    padding: 20px;
+    width: 220px;
+    height: 220px;
+   
+    margin-bottom: 3rem;
 }
-
-.words span:nth-child(3) {
-  animation-delay: 1s;
+.animated-title > div.text-top div span:first-child {
+    color: #767676;
+    font-size: 1.5rem;
+    margin-top: 1rem;
 }
-
-.words span:nth-child(4) {
-  animation-delay: 1.5s;
+.animated-title > div div span {
+    display: block;
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
 }
-
-.words span:nth-child(5) {
-  animation-delay: 2s;
+.animated-title > div.text-bottom div {
+  margin-top:1rem;
+    font-size: 1.5rem;
+    margin-left: 4.5rem;
 }
-
-.words span:nth-child(6) {
-  animation-delay: 2.5s;
+.animated-title > div.text-top {
+    border-bottom: 0.5vmin solid #000;
+    top: 0;
+    width: 20rem;
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
 }
-
-.words span:nth-child(7) {
-  animation-delay: 3s;
-} */
+#info-head {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding: 2rem;
+}
+#pgh {
+   
+    font-size: 1rem;
+    padding: 2rem;
+}
+#description {
+   
+    margin-right: -1rem;
+}
+#about-btn {
+  margin-right: 3.5rem;
+    font-size: 1rem;
+}
+}
 </style>

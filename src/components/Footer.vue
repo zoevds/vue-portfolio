@@ -3,16 +3,16 @@
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
       <!-- Section: Social media -->
-      <section
+      <!-- <section
         class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
       >
-        <!-- Left -->
+       
         <div class="me-5 d-none d-lg-block">
           <span>Get connected with me on social media:</span>
         </div>
-        <!-- Left -->
+        
 
-        <!-- Right -->
+       
         <div>
           <a href="" class="me-4 text-reset">
             <i class="fab fa-linkedin"></i>
@@ -21,18 +21,18 @@
             <i class="fab fa-github"></i>
           </a>
         </div>
-        <!-- Right -->
-      </section>
+       
+      </section> -->
       <!-- Section: Social media -->
 
       <!-- Section: Links  -->
-      <section class="">
+      <!-- <section class="">
         <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
+          
           <div class="row mt-3">
-            <!-- Grid column -->
+           
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
+              
               <h6 class="text-uppercase fw-bold mb-4">
                 <i class="fas fa-gem me-3"></i>Zoe Van Der Schyff
               </h6>
@@ -43,12 +43,12 @@
               </p>
             </div>
 
-            <!-- Grid column -->
+           
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4"></div>
 
-            <!-- Grid column -->
+            
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
+            
               <h6 class="text-uppercase fw-bold mb-4">Links</h6>
               <router-link to="/" class="nav-link active nav-item">
                 Home
@@ -68,7 +68,7 @@
               </router-link>
             </div>
 
-            <!-- Grid column -->
+           
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
@@ -83,7 +83,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Copyright -->
       <div
@@ -102,9 +102,7 @@ export default {};
 </script>
 <style>
 #footer {
-  /* background-color: #f6f4f4; */
-  min-height: 40vh;
-  margin: 1.6rem;
+  /* margin: 1.6rem; */
   cursor: pointer;
 }
 #col1 {

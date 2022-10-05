@@ -133,4 +133,12 @@ export default {
     font-size: 2rem;
   }
 }
+@media only screen and (max-width: 350px){
+  .nav-links.active{
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 22rem;
+}
+}
 </style>

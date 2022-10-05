@@ -3,7 +3,7 @@
     <!-- <div class="container"> -->
     <!-- <div class="row align-items-start"> -->
      <div id="space">
-      <h1 id="about-head1">About Myself</h1>
+      <h1 id="about-head1">Myself</h1>
       <!-- <p>
              <span id="spaninfo" class="fw-bold text-dark">FullName:</span>Zoe Van Der Schyff
            </p>
@@ -16,11 +16,11 @@
  
            <p><span id="spaninfo" class="fw-bold text-dark">Gender:</span>Female</p> -->
      </div>
-     
+   
        <div class="row">
 
-         <div class="col">
-           <h1 id="abit-about">Abit about Myself</h1>
+         <div id="aboutcol1" class="col-md-6">
+          <h1 id="abit-about">Abit about Myself</h1>
          <p id="myself-pgh"> My name is Zoe Van der Schyff,I am an Aspiring Full Stack Developer , 
           who is interested in technology and developing web applications. 
           I am a resilient person, who always gets back up after a downfall. 
@@ -29,11 +29,11 @@
             I am creative in designing, drawing, painting and I enjoy creating new things using old products.
              </p>
        </div>
-       <div class="col">
+       <div id="aboutcol2" class="col-md-6">
 
          <h1 id="col-heading">My interests</h1>
 
-         <p>
+         <p id="interests-pgh">
            Some of my hobbies are reading books, 
            I am an avid reader, I enjoy reading books that will teach me, such as books about the marketing 
              structure in South Africa and other entrepreneurial books to upskill myself where marketing is concerned. I also enjoy drawing/painting , action
@@ -205,7 +205,9 @@ export default {};
   min-height: 50vh;
   /* margin: 1.6rem; */
 }
-
+#aboutcol1,#aboutcol2{
+padding: 1rem;
+}
 #img1 {
   margin-top: 6rem;
   height: 400px;
@@ -596,7 +598,29 @@ padding: 1rem;
     background-color: lightgray;
     min-height: 50vh;
    
-    margin-right: -2rem;
+    margin-right:-1rem;
 }
+#abit-about {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+#myself-pgh {
+    padding: 1rem;
+    font-size: 1rem;
+}
+#col-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+#interests-pgh{
+  padding: 1rem;
+}
+#skills-pg {
+ 
+    margin-right: -0.8rem;
+}
+
 }
 </style>

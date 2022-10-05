@@ -1,8 +1,14 @@
 <template>
-  <section class="hero-section">
-    <div class="row">
+  <section>
+    <div id="spot">
+      
       <h1 id="testimonial-title">Testimonials</h1>
-      <div class="col">
+      <h2 id="subtitle">Have A look at what some people had to say about me!</h2>
+      <button id="downarrowbtn" ><i id="downarrow" class="fa-solid fa-down-long" @click="scrolldown()"></i></button>
+    </div>
+    <section id="testimonials">
+     <div class="row"> 
+       <div class="col">
         <div class="card-grid m-4 p-3">
           <div
             v-for="testimonial in testimonials"
@@ -25,8 +31,9 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
+       </div> 
+     </div>
+    </section>
   </section>
 </template>
 <script>
@@ -101,18 +108,39 @@ export default {
       ],
     };
   },
+  // methods:{
+  //   scrolldown({
+      
+  //   })
+    
+  // }
 };
 </script>
 <style>
-.hero-section {
-  align-items: flex-start;
-  /* background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%); */
-  display: flex;
-  min-height: 100%;
-  justify-content: center;
+#testimonials{
+  min-height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(https://i.postimg.cc/BQ1R82Yz/jellyfish-g26ca00314-1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#downarrow{
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+#subtitle{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
 }
 #paragraph-text {
   font-size: 1rem;
+}
+#spot{
+  background-color: lightgray;
+  min-height: 50vh;
+  
 }
 #testimonial-img {
   margin-top: 3rem;
@@ -123,8 +151,9 @@ export default {
   box-shadow: 3px 3px 5px #232c33, -3px -3px 5px #232c33;
 }
 #testimonial-title {
-  font-family: "Allura", cursive;
-  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  padding: 4rem;
 }
 .card-grid {
   display: grid;

@@ -4,7 +4,7 @@
       
       <h1 id="testimonial-title">Testimonials</h1>
       <h2 id="subtitle">Have A look at what some people had to say about me!</h2>
-      <button id="downarrowbtn" ><i id="downarrow" class="fa-solid fa-down-long" @click="scrolldown()"></i></button>
+     <a href="#testimonials" ><i id="downarrow" class="fa-solid fa-down-long" @click="scrolldown()"></i> </a>
     </div>
     <section id="testimonials">
      <div class="row"> 
@@ -259,6 +259,29 @@ export default {
     box-shadow: 3px 3px 5px #232c33, -3px -3px 5px #232c33;
   }
 }
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 350px) {
+  #testimonial-title {
+    font-size: 2rem;
+    padding: 5rem;
+}
+#subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+#testimonial-img {
+  
+    height: 450px;
+    width: 400px;
+    border-radius: 4px;
+  
+   
+}
+.card__content {
+    left: 0;
+    position: absolute;
+    top: 10rem;
+    color: white;
+}
 }
 </style>

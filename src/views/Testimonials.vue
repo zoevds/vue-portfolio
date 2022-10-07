@@ -26,7 +26,9 @@
             <div class="card__content m-3 p-4">
               <p class="card__category">{{ testimonial.name }}</p>
               <h3 id="paragraph-text" class="card__heading">
-                {{ testimonial.paragraph }}
+               <span id="dots"> {{ testimonial.paragraph }}...</span><span id="more"></span>
+                
+<button onclick="myFunction()" id="myBtn">Read more</button>
               </h3>
             </div>
           </div>
@@ -87,7 +89,7 @@ export default {
           Name: "Godwin Dzvapatsva",
           status: "Lecturer",
           paragraph:
-            "I have known Zoe for the duration of her studies at Lifechoices. She grasps new concepts quickly and accepts constructive criticism and instruction concerning her work. She has good strength in HTML, CSS, Bootstrap and MySQL.  I recommend her. Godwin Dzvapatsva (Ph.D)-Head of Curriculum and Learning",
+            "I have known Zoe for the duration of her studies at Lifechoices.",
         },
         {
           id: 8,
@@ -108,12 +110,24 @@ export default {
       ],
     };
   },
-  // methods:{
-  //   scrolldown({
-      
-  //   })
+  methods:{
+  myFunction() {
+  let dots = document.getElementById("dots");
+ let  moreText = document.getElementById("more");
+ let  btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
     
-  // }
+  }
 };
 </script>
 <style>
@@ -136,6 +150,7 @@ export default {
 }
 #paragraph-text {
   font-size: 1rem;
+  display: none;
 }
 #spot{
   background-color: lightgray;
@@ -191,6 +206,7 @@ export default {
   transform-origin: center;
   transform: scale(1) translateZ(0);
   transition: filter 200ms linear, transform 200ms linear;
+ 
 }
 
 .card:hover .card__background {
@@ -252,7 +268,7 @@ export default {
   }
   #testimonial-img {
     margin-top: 3rem;
-    height: 465px;
+    height: 430px;
     width: 400px;
     border-radius: 2px;
     background: darkslategrey;
@@ -265,16 +281,15 @@ export default {
     padding: 5rem;
 }
 #subtitle {
-    font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
     font-size: 1.2rem;
     padding: 2rem;
+    margin-top: -5rem;
 }
 #testimonial-img {
-  
-    height: 450px;
-    width: 400px;
+  height: 420px;
+    width: 900px;
     border-radius: 4px;
-  
    
 }
 .card__content {

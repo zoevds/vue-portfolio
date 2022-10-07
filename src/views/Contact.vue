@@ -1,5 +1,11 @@
 <template>
   <div class="form-bg">
+    <div id="blank">
+      <h1>Contact Info</h1>
+      <p id="email-info"><i class="fa-solid fa-envelope"></i>Email: zoevanderschyff13@gmail.com</p>
+      <p id="phone-info"><i class="fa-solid fa-phone"></i>cellphone: (+27) 81 574 1383</p>
+    </div>
+    <section id="contact-sect">
     <div class="container">
       <div class="row">
         <div class="col-md-offset-3 col-md-6">
@@ -63,13 +69,35 @@
         </div>
       </div>
     </div>
+  </section>
   </div>
-  <!-- <div class="open_grepper_editor" title="Edit & Save To Grepper"></div> -->
+ 
 </template>
 <script>
 export default {};
 </script>
 <style>
+  #email-info,#phone-info{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  #contact-sect{
+    min-height: 40vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(https://i.postimg.cc/2SP4WH91/jellyfish-g248e9c418-1920.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+  #blank {
+  background-color: lightgray;
+  min-height: 50vh;
+  font-family: 'Playfair Display', serif;
+  padding: 3rem;
+  font-size: 4rem;
+}
 .map-container {
   widows: 100%;
 }

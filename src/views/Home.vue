@@ -270,10 +270,12 @@ h2 {
 	 transform: translate(0, -100%);
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 370px){
+  body, html{
+    overflow-x: hidden;
+  }
   #self-image {
-    margin-top: 3.5rem;
-   
+    margin-top: 2.5rem;
     padding: 20px;
     width: 220px;
     height: 220px;
@@ -293,14 +295,17 @@ h2 {
 .animated-title > div.text-bottom div {
   margin-top:1rem;
     font-size: 1.5rem;
-    margin-left: 4.5rem;
+    margin-left: 3.5rem;
 }
 .animated-title > div.text-top {
     border-bottom: 0.5vmin solid #000;
     top: 0;
-    width: 20rem;
+   
+    width: 17rem;
+
     margin-left: 2.5rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 #info-head {
     color: white;
@@ -328,6 +333,7 @@ i.fa-brands.fa-linkedin {
 .animated-title > div.text-bottom {
     bottom: 0;
     margin-left: 1rem;
+    margin-top:1rem;
 }
 
 }

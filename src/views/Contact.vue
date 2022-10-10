@@ -265,7 +265,7 @@ iframe {
   width: 50%;
   margin-top: 3rem;
 } */
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 350px) {
   .form-container .form-horizontal {
     width: 18.5rem;
     height: 25rem;
@@ -290,5 +290,24 @@ iframe {
     width: 85%;
     height: 25rem;
   }
+  #contactMainHeading {
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px black;
+    font-size: 2rem;
+    padding: 1rem;
+}
+#paragraphInfo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    /* text-shadow: 2px 2px 4px black; */
+}
+#email-info, #phone-info {
+    font-size: 1rem;
+    margin-top: 1rem;
+    /* padding: 2rem; */
+}
+
+
 }
 </style>

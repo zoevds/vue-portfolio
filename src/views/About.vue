@@ -184,6 +184,7 @@
           </div>
         </div>
       </div>
+      <a href="#about"><i id="anglesUp1" class="fa-solid fa-angles-up"></i></a>
     </div>
   </section> 
 </template>
@@ -191,9 +192,9 @@
 export default {};
 </script>
 <style>
-/* body {
-  background-color: #d7c8c1;
-} */
+#anglesUp1{
+font-size: 2rem;
+}
 #about-head1 {
   font-family: 'Playfair Display', serif;
   padding: 3rem;

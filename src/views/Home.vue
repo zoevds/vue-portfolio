@@ -338,6 +338,11 @@ i.fa-brands.fa-linkedin {
     margin-left: 1rem;
     /* margin-top:1rem; */
 }
-
+#socials {
+    display: flex;
+    font-size: 2rem;
+    margin-top: 8rem;
+    margin-left: 29rem;
+}
 }
 </style>

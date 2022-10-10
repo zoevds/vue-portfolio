@@ -50,8 +50,8 @@
           </form>
         </dialog>
       </div>
+      <a href="#projects"><i id="anglesUp2" class="fa-solid fa-angles-up"></i></a>
       </section>
-   
   </section>
 </template>
 <script>
@@ -161,6 +161,10 @@ export default {
 };
 </script>
 <style>
+  #anglesUp2{
+    font-size: 2rem;
+    color: white;
+  }
 a {
   cursor: pointer;
 }

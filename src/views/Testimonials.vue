@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="MainTestimonials">
     <div id="spot">
       
       <h1 id="testimonial-title">Testimonials</h1>
@@ -32,6 +32,7 @@
         </div>
        </div> 
      </div>
+     <a href="#MainTestimonials"><i id="anglesUp2" class="fa-solid fa-angles-up"></i></a>
     </section>
   </section>
 </template>

@@ -272,20 +272,7 @@ h2 {
 	 top: 0;
 	 transform: translate(0, -100%);
 }
-@media only screen and (max-width: 450px){
-  img#self-image {
-    margin-top: 5rem;
-    margin-right: 1rem;
-    width: 15rem;
-    height: 15rem;
-}
-.animated-title > div.text-top {
-    border-bottom: 0.5vmin solid #000;
-    top: 0;
-    margin-top: 3rem;
-    margin-left: 5rem;
-}
-}
+
 @media only screen and (max-width: 370px){
   body, html{
     overflow-x: hidden;
@@ -309,7 +296,7 @@ h2 {
     margin-left: 3.5rem;
 }
 .animated-title > div.text-bottom div {
-  /* margin-top:1rem; */
+
     font-size: 1.5rem;
     margin-left: 3.5rem;
 }
@@ -320,7 +307,7 @@ h2 {
     width: 17rem;
 
     margin-left: 2.5rem;
-    /* margin-top: 1rem; */
+   
     margin-bottom: 2rem;
 }
 #info-head {
@@ -349,7 +336,7 @@ i.fa-brands.fa-linkedin {
 .animated-title > div.text-bottom {
     bottom: 0;
     margin-left: 1rem;
-    /* margin-top:1rem; */
+   
 }
 #socials {
     display: flex;
@@ -402,5 +389,25 @@ p#pgh {
     font-size: 1.3rem;
 }
 }
-
+@media only screen and (max-width: 450px){
+  #self-image {
+    box-shadow: 2px 1px 4px black;
+    margin-top: 5rem;
+    background-position: left top;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding: 20px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+  
+}
+.animated-title > div.text-top {
+    border-bottom: 0.5vmin solid #000;
+    top: 0;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+}
 </style>

@@ -184,16 +184,30 @@
           </div>
         </div>
       </div>
-      <a href="#about"><i id="anglesUp1" class="fa-solid fa-angles-up"></i></a>
-    </div>
+      <!-- <div class="tooltip"> -->
+
+        <a href="#about"><i id="anglesUp1" class="fa-solid fa-angles-up"></i></a>
+      </div>
+    <!-- </div> -->
   </section> 
 </template>
 <script>
 export default {};
 </script>
 <style>
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  color: #084c61;
+}
 #anglesUp1{
 font-size: 2rem;
+padding: 2rem;
+color: #084c61;
+}
+#anglesUp1:hover{
+  color: darkgray;
 }
 #about-head1 {
   font-family: 'Playfair Display', serif;

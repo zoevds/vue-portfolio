@@ -301,4 +301,23 @@ export default {
     text-shadow: 8px 8px 16px black;
 }
 }
+@media only screen and (max-width: 400px){
+  h1#testimonial-title {
+    padding: 4rem;
+    margin-left: -1rem;
+}
+h2#subtitle {
+    padding: 2rem;
+    margin-top: -4rem;
+}
+::before {
+    margin-top: -3rem;
+}
+i#anglesUp2 {
+    font-size: 1.7rem;
+}
+#testimonial-title {
+    font-size: 2.5rem;
+}
+}
 </style>

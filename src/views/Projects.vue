@@ -164,7 +164,11 @@ export default {
   #anglesUp2{
     font-size: 2rem;
     color: white;
+    padding: 2rem;
   }
+  #anglesUp2:hover{
+  color: darkgray;
+}
 a {
   cursor: pointer;
 }
@@ -380,6 +384,84 @@ padding: 2rem;
     border-radius: 2px;
   }
 }
+@media only screen and (max-width: 400px){
+  .animated-title2 > div.text-top2 {
+    border-bottom: 0.5vmin solid #000;
+    top: 0;
+    margin-left: 2rem;
+    width: 20rem;
+}
+.animated-title2 > div div span {
+    display: block;
+    margin-left: 5rem;
+}
+.animated-title2 > div.text-bottom2 {
+    bottom: 0;
+    margin-left: 5rem;
+}
+.animated-title2 > div.text-bottom2 div {
+  
+    font-size: 1rem;
+}
+.animated-title2 > div.text-top2 div span:first-child {
+    color: #767676;
+    font-size: 2rem;
+}
+.animated-title2 {
+    color: #222;
+    font-family: 'Playfair Display', serif;
+    height: 90vmin;
+    left: 50%;
+    position: absolute;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    width: 100vmin;
+    margin-top: -9rem;
+}
+dialog#dialog-default1 {
+    height: 32rem;
+    margin-top: 6rem;
+}
+dialog#dialog-default2 {
+    
+  height: 36.5rem;
+  margin-top: 6rem;
+
+}
+dialog#dialog-default3 {
+    height: 32rem;
+    margin-top: 6rem;
+}
+dialog#dialog-default4 {
+    height: 32rem;
+    margin-top: 6rem;
+}
+dialog#dialog-default5 {
+    height: 32rem;
+    margin-top: 6rem;
+}
+dialog#dialog-default6 {
+    height: 32rem;
+    margin-top: 6rem;
+}
+dialog#dialog-default7 {
+    height: 34rem;
+    margin-top: 6rem;
+}
+dialog#dialog-default8 {
+    height: 32rem;
+    margin-top: 6rem;
+}
+dialog#dialog-default9 {
+    height: 35rem;
+    margin-top: 5rem;
+}
+dialog#dialog-default10 {
+    height: 32rem;
+    margin-top: 6rem;
+}
+
+}
 @media only screen and (max-width: 370px){
   .animated-title2 > div.text-top2 {
     margin-left: 5rem;
@@ -416,4 +498,5 @@ padding: 2rem;
 }
 
 }
+
 </style>

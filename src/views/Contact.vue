@@ -265,6 +265,59 @@ iframe {
   width: 50%;
   margin-top: 3rem;
 } */
+@media only screen and (max-width: 400px){
+  h1#contactMainHeading {
+    font-size: 2rem;
+    padding: 2rem;
+}
+#paragraphInfo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-shadow: -1px -1px 2px black;
+    margin-top: -1rem;
+}
+p#email-info {
+    font-size: 1rem;
+
+    margin-top: -1rem;
+}
+p#phone-info {
+    font-size: 1rem;
+    margin-top: -2rem;
+}
+
+#iconId {
+    padding: 1rem;
+    font-size: 1rem;
+}
+.form-container .form-horizontal {
+
+    width: 20rem;
+    height: 28rem;
+
+  
+}
+.form-container .title:after {
+    
+    width: 275px;
+  
+}
+.form-container .form-icon {
+   
+  font-size: 25px;
+  height: 70px;
+    width: 70px;
+}
+h1#contact-title {
+    padding: 2rem;
+    margin-top: -4rem;
+}
+h1#map-title {
+    padding: 2rem;
+    margin-top: -4rem;
+}
+}
 @media only screen and (max-width: 350px) {
   .form-container .form-horizontal {
     width: 18.5rem;

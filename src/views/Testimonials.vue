@@ -4,7 +4,7 @@
       
       <h1 id="testimonial-title">Testimonials</h1>
       <h2 id="subtitle">Have A look at what some people had to say about me!</h2>
-     <a href="#testimonials" ><i id="downarrow" class="fa-solid fa-down-long" @click="scrolldown()"></i> </a>
+     <a href="#testimonials" ><i id="downarrow" class="fa-solid fa-down-long"></i> </a>
     </div>
     <section id="testimonials">
      <div class="row"> 
@@ -26,10 +26,7 @@
             <div class="card__content m-3 p-4">
               <p class="card__category">{{ testimonial.name }}</p>
               <h3 id="paragraph-text" class="card__heading">
-               <span id="dots"> {{ testimonial.paragraph }}...</span><span id="more"></span>
-                
-<button onclick="myFunction()" id="myBtn">Read more</button>
-              </h3>
+              {{ testimonial.paragraph }} </h3>
             </div>
           </div>
         </div>
@@ -89,7 +86,7 @@ export default {
           Name: "Godwin Dzvapatsva",
           status: "Lecturer",
           paragraph:
-            "I have known Zoe for the duration of her studies at Lifechoices.",
+            "Zoe grasps new concepts quickly and accepts constructive criticism and instruction concerning her work. She has good strength in HTML, CSS, Bootstrap and MySQL.  I recommend her. Godwin Dzvapatsva (Ph.D)-Head of Curriculum and Learning",
         },
         {
           id: 8,
@@ -110,24 +107,24 @@ export default {
       ],
     };
   },
-  methods:{
-  myFunction() {
-  let dots = document.getElementById("dots");
- let  moreText = document.getElementById("more");
- let  btnText = document.getElementById("myBtn");
+//   methods:{
+//   myFunction() {
+//   let dots = document.getElementById("dots");
+//  let  moreText = document.getElementById("more");
+//  let  btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more";
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less";
+//     moreText.style.display = "inline";
+//   }
+// }
     
-  }
+//   }
 };
 </script>
 <style>
@@ -150,7 +147,7 @@ export default {
 }
 #paragraph-text {
   font-size: 1rem;
-  display: none;
+
 }
 #spot{
   background-color: lightgray;
@@ -287,7 +284,7 @@ export default {
     margin-top: -5rem;
 }
 #testimonial-img {
-  height: 420px;
+  height: 440px;
     width: 900px;
     border-radius: 4px;
    
@@ -297,6 +294,10 @@ export default {
     position: absolute;
     top: 10rem;
     color: white;
+}
+#paragraph-text {
+    font-size: 0.9rem;
+    text-shadow: 8px 8px 16px black;
 }
 }
 </style>

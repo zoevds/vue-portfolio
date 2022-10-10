@@ -4,6 +4,10 @@
     <!-- <div class="row align-items-start"> -->
      <div id="space">
       <h1 id="about-head1">Myself</h1>
+      <div class="col">
+
+<img id="self" src="https://i.postimg.cc/rs4TVfQ9/IMG-20220916-WA0045.jpg"/>
+</div>
       <!-- <p>
              <span id="spaninfo" class="fw-bold text-dark">FullName:</span>Zoe Van Der Schyff
            </p>
@@ -127,6 +131,7 @@
         <div class="col-md-12">
           <div class="main-timeline">
             <!-- 1 -->
+            
             <div class="timeline">
               <a href="#" class="timeline-content">
                 <div class="timeline-icon">
@@ -196,6 +201,15 @@ export default {};
   display: flex;
   justify-content: center;
   align-items: center;
+  text-shadow: 2px 2px 4px black;
+}
+#self{
+  width: 19rem;
+  height: 25rem;
+  /* object-fit: contain; */
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  box-shadow: 3px 3px 6px black;
 }
 #abit-about{
   font-family: 'Playfair Display', serif;
@@ -400,13 +414,13 @@ padding: 1rem;
 .main-timeline .timeline:nth-child(4n + 1):after {
   background: linear-gradient(
     to right,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    transparent,
-    #f6f4f4
+    #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+
+    #084c61
   );
 }
 .main-timeline .timeline:nth-child(4n + 2):before {
@@ -415,13 +429,13 @@ padding: 1rem;
 .main-timeline .timeline:nth-child(4n + 2):after {
   background: linear-gradient(
     to right,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    transparent,
-    #f6f4f4
+   #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+   
+    #084c61
   );
 }
 
@@ -445,13 +459,13 @@ padding: 1rem;
 .main-timeline .timeline:nth-child(4n + 4):after {
   background: linear-gradient(
     to right,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    #f6f4f4,
-    transparent,
-    #f6f4f4
+    #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+
+    #084c61
   );
 }
 .main-timeline .timeline:nth-child(4n + 4) .timeline-icon {
@@ -490,32 +504,30 @@ padding: 1rem;
   .main-timeline .timeline:nth-child(even):after {
     left: auto;
   }
-  .main-timeline .timeline:nth-child(4n + 1)after {
-    background: linear-gradient(
-      to top,
-      #01c0f7,
-      #01c0f7,
-      #01c0f7,
-      #01c0f7,
-      #01c0f7,
-      transparent,
-      #868686,
-      #868686
-    );
-  }
-  .main-timeline .timeline:nth-child(4n + 2):after {
-    background: linear-gradient(
-      to bottom,
-      #f6f4f4,
-      #f6f4f4,
-      transparent,
-      #f6f4f4,
-      #f6f4f4,
-      #f6f4f4,
-      #f6f4f4,
-      #f6f4f4
-    );
-  }
+  .main-timeline .timeline:nth-child(4n + 1):after {
+  background: linear-gradient(
+    to right,
+    #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+
+    #084c61
+  );
+}
+.main-timeline .timeline:nth-child(4n + 2):after {
+  background: linear-gradient(
+    to right,
+   #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+    #084c61,
+   
+    #084c61
+  );
+}
   .main-timeline .timeline:nth-child(4n + 3):after {
     background: linear-gradient(
       to top,

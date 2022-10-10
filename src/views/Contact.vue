@@ -1,9 +1,20 @@
 <template>
   <div class="form-bg">
     <div id="blank">
-      <h1>Contact Info</h1>
-      <p id="email-info"><i class="fa-solid fa-envelope"></i>Email: zoevanderschyff13@gmail.com</p>
-      <p id="phone-info"><i class="fa-solid fa-phone"></i>cellphone: (+27) 81 574 1383</p>
+      <h1 id="contactMainHeading">Contact Info</h1>
+      <h2 id="paragraphInfo">To get in contact with me , pop me a email or feel free to call me regarding business.
+        Connect with me via LinkedIn
+      </h2>
+      <div class="row">
+<div class="col">
+
+  <p id="email-info"><i id="iconId" class="fa-solid fa-envelope"></i>Email: zoevanderschyff13@gmail.com</p>
+</div>
+<div class="col">
+
+  <p id="phone-info"><i id="iconId" class="fa-solid fa-phone"></i>cellphone: (+27) 81 574 1383</p>
+</div>
+      </div>
     </div>
     <section id="contact-sect">
     <div class="container">
@@ -77,10 +88,25 @@
 export default {};
 </script>
 <style>
-  #email-info,#phone-info{
+  #contactMainHeading{
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px black;
+    font-size: 3rem;
+  }
+  #paragraphInfo{
+    font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    margin-top: 2rem;
     padding: 2rem;
+    text-shadow: 2px 2px 4px black;
+  }
+  #iconId{
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  #email-info,#phone-info{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    /* padding: 2rem; */
   }
   #contact-sect{
     min-height: 40vh;
@@ -104,10 +130,7 @@ export default {};
 iframe {
   width: 90%;
 }
-#map-title {
-  font-family: "Allura", cursive;
-  font-size: 3rem;
-}
+
 .form-container {
   font-family: "Roboto", sans-serif;
   /* padding: 40px 40px 0 0; */
@@ -143,9 +166,10 @@ iframe {
   height: 28rem;
   /* margin-top: 3rem; */
 }
-#contact-title {
-  font-family: "Allura", cursive;
-  font-size: 3rem;
+#contact-title,#map-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: white;
 }
 .form-container .title {
   color: #b5b5b5;

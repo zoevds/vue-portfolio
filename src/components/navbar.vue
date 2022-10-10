@@ -48,6 +48,7 @@ export default {
 <style scoped>
 #nav-cont {
   cursor: pointer;
+  font-family: 'Playfair Display', serif;
 }
 /* #navbar{
   background-color: black;
@@ -93,6 +94,7 @@ export default {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  font-family: 'Playfair Display', serif;
 }
 .items:hover {
   color: #084c61;
@@ -106,7 +108,7 @@ export default {
   left: 0;
   right: 0;
   height: 105vh;
-  background-color: #f6f4f4;
+  background-color: lightgray;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;

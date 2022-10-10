@@ -76,11 +76,13 @@ margin-left: 30rem;
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   padding: 3rem;
+  text-shadow: 5px 5px 10px black;
 }
 #pgh{
   color: white;
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
+  text-shadow: 2px 2px 4px black;
 }
 #about-router{
   text-decoration: none;
@@ -91,9 +93,9 @@ margin-left: 30rem;
   border: none;
   color: black;
   text-align: center;
-  font-size: 32px;
-  padding: 16px;
-  width: 220px;
+  font-size: 1.3rem;
+  padding: 10px;
+  width: 180px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 36px;
@@ -111,9 +113,10 @@ margin-left: 30rem;
   content: '»';
   position: absolute;
   opacity: 0;  
-  top: 14px;
+  top: 6px;
   right: -20px;
   transition: 0.5s;
+  font-size: 1.5rem;
 }
 
 #about-btn:hover{
@@ -277,9 +280,9 @@ h2 {
   #self-image {
     margin-top: 2.5rem;
     padding: 20px;
-    width: 220px;
-    height: 220px;
-    margin-right: 1rem;
+    width: 200px;
+    height: 200px;
+    margin-right: 0.5rem;
     margin-bottom: 3rem;
 }
 .animated-title > div.text-top div span:first-child {
@@ -293,7 +296,7 @@ h2 {
     margin-left: 3.5rem;
 }
 .animated-title > div.text-bottom div {
-  margin-top:1rem;
+  /* margin-top:1rem; */
     font-size: 1.5rem;
     margin-left: 3.5rem;
 }
@@ -304,7 +307,7 @@ h2 {
     width: 17rem;
 
     margin-left: 2.5rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     margin-bottom: 2rem;
 }
 #info-head {
@@ -333,7 +336,7 @@ i.fa-brands.fa-linkedin {
 .animated-title > div.text-bottom {
     bottom: 0;
     margin-left: 1rem;
-    margin-top:1rem;
+    /* margin-top:1rem; */
 }
 
 }

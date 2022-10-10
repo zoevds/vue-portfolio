@@ -24,7 +24,7 @@
        <div class="row">
 
          <div id="aboutcol1" class="col-md-6">
-          <h1 id="abit-about">Abit about Myself</h1>
+          <h1 id="abit-about">Abit about myself</h1>
          <p id="myself-pgh"> My name is Zoe Van der Schyff,I am an Aspiring Full Stack Developer , 
           who is interested in technology and developing web applications. 
           I am a resilient person, who always gets back up after a downfall. 
@@ -170,7 +170,7 @@
             <div class="timeline">
               <a href="#" class="timeline-content">
                 <div class="timeline-icon">
-                  <i class="fa fa-rocket"></i>
+                  <i class="fa-solid fa-check-double"></i>
                 </div>
                 <div class="content">
                   <h3 class="title">Life Choices Coding Academy</h3>
@@ -213,15 +213,16 @@ export default {};
 }
 #abit-about{
   font-family: 'Playfair Display', serif;
+  text-shadow: 2px 2px 4px black;
 }
 #space {
   background-color: lightgray;
   min-height: 50vh;
   /* margin: 1.6rem; */
 }
-#aboutcol1,#aboutcol2{
+/* #aboutcol1,#aboutcol2{
 padding: 1rem;
-}
+} */
 #img1 {
   margin-top: 6rem;
   height: 400px;
@@ -234,9 +235,10 @@ padding: 1rem;
   font-size: 3rem;
   display: flex;
   justify-content: center;
+  text-shadow: 2px 2px 4px black;
 }
-#myself-pgh{
-padding: 1rem;
+#myself-pgh,#interests-pgh{
+padding: 2rem;
 }
 #skills-pg{
   min-height: 40vh;
@@ -252,6 +254,7 @@ padding: 1rem;
   font-size: 4rem;
   display: flex;
   justify-content: center;
+  text-shadow: 2px 2px 4px black;
 }
 #spaninfo{
   display: flex;
@@ -531,14 +534,14 @@ padding: 1rem;
   .main-timeline .timeline:nth-child(4n + 3):after {
     background: linear-gradient(
       to top,
-      #00b09e,
-      #00b09e,
-      #00b09e,
-      #00b09e,
-      #00b09e,
-      transparent,
-      #868686,
-      #868686
+      #084c61,
+      #084c61,
+      #084c61,
+      #084c61,
+      #084c61,
+      
+      #084c61,
+      #084c61
     );
   }
   .main-timeline .timeline:nth-child(4n + 4):after {
@@ -615,6 +618,7 @@ padding: 1rem;
 #abit-about {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
+    padding: 1rem;
 }
 #myself-pgh {
     padding: 1rem;
@@ -625,6 +629,8 @@ padding: 1rem;
     font-size: 2rem;
     display: flex;
     justify-content: center;
+    padding: 1rem;
+    margin-top: -2rem;
 }
 #interests-pgh{
   padding: 1rem;
@@ -633,6 +639,39 @@ padding: 1rem;
  
     margin-right: -0.8rem;
 }
-
+#self {
+    width: 19rem;
+    height: 25rem;
+    
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 6px black;
+    margin-left: -1rem;
+}
+#resume-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 4px black;
+    padding: 2rem;
+}
+.main-timeline .timeline:nth-child(even) .timeline-icon, .main-timeline .timeline-icon {
+    right: 50%;
+    top: 2%;
+    transform: translateX(50%) translateY(0);
+    font-size: 3rem;
+}
+.main-timeline .description {
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 1rem;
+}
+.main-timeline .timeline:nth-child(4n + 3) .title {
+    color: #084c61;
+    padding: 1rem;
+}
 }
 </style>

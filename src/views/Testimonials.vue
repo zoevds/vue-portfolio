@@ -19,7 +19,7 @@
             <div class="card__background">
               <img
                 id="testimonial-img"
-                class="img-fluid"
+                class="img-fluid ma-2"
                 v-bind:src="testimonial.img"
               />
             </div>
@@ -257,9 +257,9 @@ export default {
   #testimonial-title {
     font-size: 3rem;
   }
-  .p-3 {
+  /* .p-3 {
     padding: 1.5rem !important;
-  }
+  } */
 
   .m-4 {
     margin: 0rem !important;

@@ -134,27 +134,8 @@ background-color: black;
 color: white;
 border-radius: 4px;
 } */
-@media only screen and (max-width: 990px) {
-  .text-effect {
-    font-size: 90px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .text-effect {
-    font-size: 65px;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .text-effect {
-    font-size: 50px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .text-effect {
-    font-size: 38px;
-    line-height: 35px;
-  }
-}
+
+
 
 #self-image {
   box-shadow: 2px 1px 4px black;
@@ -185,46 +166,8 @@ h2 {
   font-family: "Allura", cursive;
   font-size: 3rem;
 }
-@media only screen and (max-width: 580px) {
-  body, html{
-    overflow-x: hidden;
-   
-  }
-  img#img {
-    width: 15rem;
-    height: 12rem;
-  }
-  #home-title {
-    font-size: 2rem;
 
-    margin-top: -32rem;
-  }
-  .text-effect span {
-    font-size: 1.5rem;
-  }
 
-}
-/* name animations */
-
- @keyframes showTopText {
-	 0% {
-		 transform: translate3d(0, 100%, 0);
-	}
-	 40%, 60% {
-		 transform: translate3d(0, 50%, 0);
-	}
-	 100% {
-		 transform: translate3d(0, 0, 0);
-	}
-}
- @keyframes showBottomText {
-	 0% {
-		 transform: translate3d(0, -100%, 0);
-	}
-	 100% {
-		 transform: translate3d(0, 0, 0);
-	}
-}
  .animated-title {
 	 color: #222;
 	 font-family: 'Playfair Display', serif;
@@ -277,7 +220,7 @@ h2 {
 	 transform: translate(0, -100%);
 }
 
- @media only screen and (max-width: 330px){
+@media only screen and (max-width: 330px){
   body, html{
     overflow-x: hidden;
   }
@@ -431,6 +374,12 @@ p#pgh {
     margin-left: 5rem;
 }
 } 
+@media only screen and (max-width: 479px) {
+  .text-effect {
+    font-size: 38px;
+    line-height: 35px;
+  }
+}
 /* @media only screen and (max-width: 330px){
   body, html{
     overflow-x: hidden;
@@ -460,4 +409,60 @@ p#pgh {
   
 }
 } */
+@media only screen and (max-width: 580px) {
+  body, html{
+    overflow-x: hidden;
+   
+  }
+  img#img {
+    width: 15rem;
+    height: 12rem;
+  }
+  #home-title {
+    font-size: 2rem;
+
+    margin-top: -32rem;
+  }
+  .text-effect span {
+    font-size: 1.5rem;
+  }
+
+}@media only screen and (max-width: 576px) {
+  .text-effect {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .text-effect {
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .text-effect {
+    font-size: 90px;
+  }
+}
+
+
+/* name animations */
+
+@keyframes showTopText {
+	 0% {
+		 transform: translate3d(0, 100%, 0);
+	}
+	 40%, 60% {
+		 transform: translate3d(0, 50%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+ @keyframes showBottomText {
+	 0% {
+		 transform: translate3d(0, -100%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
 </style>

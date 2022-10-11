@@ -136,11 +136,14 @@ export default {
   }
 }
 @media only screen and (max-width: 350px){
-  .nav-links.active{
+  body,html{
+    overflow-x: hidden;
+  }
+  .nav-links.active {
     top: 0;
     display: flex;
     align-items: center;
-    width: 22rem;
+    width: 20.63rem;
 }
 }
 </style>

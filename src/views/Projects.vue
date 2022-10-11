@@ -491,7 +491,7 @@ dialog#dialog-default10 {
     position: fixed;
     top: 4%;
     left: 5%;
-    width: 20rem;
+    width: 19rem;
     height: 30rem;
     border-radius: 6px;
     margin-left: -0.5rem;

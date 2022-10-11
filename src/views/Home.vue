@@ -186,6 +186,10 @@ h2 {
   font-size: 3rem;
 }
 @media only screen and (max-width: 580px) {
+  body, html{
+    overflow-x: hidden;
+   
+  }
   img#img {
     width: 15rem;
     height: 12rem;
@@ -273,10 +277,21 @@ h2 {
 	 transform: translate(0, -100%);
 }
 
-@media only screen and (max-width: 370px){
+ @media only screen and (max-width: 330px){
   body, html{
     overflow-x: hidden;
   }
+  .animated-title2 {
+    color: #222;
+    font-family: 'Playfair Display', serif;
+    height: 90vmin;
+    left: 45%;
+    position: absolute;
+    top: 47%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+    margin-top: -9rem;
+}
   #self-image {
     margin-top: 2.5rem;
     padding: 20px;
@@ -344,8 +359,11 @@ i.fa-brands.fa-linkedin {
     margin-top: 8rem;
     margin-left: 29rem;
 }
-}
+ }
 @media only screen and (max-width: 400px){
+  body, html{
+    overflow-x: hidden;
+  }
   img#self-image {
     width: 15rem;
     height: 15rem;
@@ -388,8 +406,11 @@ p#pgh {
     padding: 2rem;
     font-size: 1.3rem;
 }
-}
-@media only screen and (max-width: 450px){
+} 
+ @media only screen and (max-width: 450px){
+  body, html{
+    overflow-x: hidden;
+  }
   #self-image {
     box-shadow: 2px 1px 4px black;
     margin-top: 5rem;
@@ -409,5 +430,34 @@ p#pgh {
     margin-top: 3rem;
     margin-left: 5rem;
 }
+} 
+/* @media only screen and (max-width: 330px){
+  body, html{
+    overflow-x: hidden;
+  }
+#self-image {
+    box-shadow: 2px 1px 4px black;
+    margin-top: 5rem;
+    background-position: left top;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    margin-right: -1rem;
 }
+.animated-title {
+    color: #222;
+    font-family: 'Playfair Display', serif;
+    height: 90vmin;
+    left: 20%;
+    position: absolute;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    width: 95vmin;
+  
+}
+} */
 </style>

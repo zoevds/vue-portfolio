@@ -220,7 +220,7 @@ h2 {
 	 transform: translate(0, -100%);
 }
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 350px){
   body, html{
     overflow-x: hidden;
   }

@@ -220,7 +220,7 @@ h2 {
 	 transform: translate(0, -100%);
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 360px){
   body, html{
     overflow-x: hidden;
   }
@@ -241,7 +241,9 @@ h1#info-head {
     font-size: 2rem;
 }
 p#pgh {
-    font-size: 1rem;
+  font-size: 1rem;
+    padding: 2rem;
+    margin-right: 1rem;
 }
 #description {
    

@@ -220,7 +220,7 @@ h2 {
 	 transform: translate(0, -100%);
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 400px){
   body, html{
     overflow-x: hidden;
   }
@@ -257,14 +257,14 @@ i.fa-brands.fa-linkedin {
 }
 .animated-title > div.text-bottom {
     bottom: 0;
-    margin-left: 1rem;
+   
    
 }
-#socials {
+ #socials {
     display: flex;
     font-size: 2rem;
     margin-top: 8rem;
-    margin-left: 29rem;
+
 }
  }
 /* @media only screen and (max-width: 400px){

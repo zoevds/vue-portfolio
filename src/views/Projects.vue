@@ -411,17 +411,10 @@ padding: 2rem;
 .text-top2 {
     margin-left: 0.3;
 }
-/* .animated-title2 {
-    color: #222;
-    font-family: 'Playfair Display', serif;
-    height: 90vmin;
-    left: 50%;
-    position: absolute;
-    top: 47%;
-    transform: translate(-50%, -50%);
-    width: 100vmin;
-    margin-top: -9rem;
-} */
+.animated-title2 {
+    width: 80vmin;
+    left: 32%;
+}
 dialog#dialog-default1 {
     height: 32rem;
     margin-top: 6rem;

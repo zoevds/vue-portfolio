@@ -273,28 +273,7 @@ padding: 2rem;
   display: flex;
   align-items: center;
 }
-/* heading animations */
-
-@keyframes showTopText {
-	 0% {
-		 transform: translate3d(0, 100%, 0);
-	}
-	 40%, 60% {
-		 transform: translate3d(0, 50%, 0);
-	}
-	 100% {
-		 transform: translate3d(0, 0, 0);
-	}
-}
- @keyframes showBottomText {
-	 0% {
-		 transform: translate3d(0, -100%, 0);
-	}
-	 100% {
-		 transform: translate3d(0, 0, 0);
-	}
-}
- .animated-title2 {
+.animated-title2 {
 	 color: #222;
 	 font-family: 'Playfair Display', serif;
 	 height: 90vmin;
@@ -351,7 +330,29 @@ padding: 2rem;
 	 transform: translate(0, -100%);
    font-size: 2rem;
 }
-@media only screen and (max-width: 600px) {
+/* heading animations */
+
+@keyframes showTopText {
+	 0% {
+		 transform: translate3d(0, 100%, 0);
+	}
+	 40%, 60% {
+		 transform: translate3d(0, 50%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+ @keyframes showBottomText {
+	 0% {
+		 transform: translate3d(0, -100%, 0);
+	}
+	 100% {
+		 transform: translate3d(0, 0, 0);
+	}
+}
+
+ @media only screen and (max-width: 600px) {
   .items {
     font-size: 2rem;
   }
@@ -388,7 +389,7 @@ padding: 2rem;
   .animated-title2 > div.text-top2 {
     border-bottom: 0.5vmin solid #000;
     top: 0;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     width: 20rem;
 }
 .animated-title2 > div div span {
@@ -407,7 +408,10 @@ padding: 2rem;
     color: #767676;
     font-size: 2rem;
 }
-.animated-title2 {
+.text-top2 {
+    margin-left: 0.3;
+}
+/* .animated-title2 {
     color: #222;
     font-family: 'Playfair Display', serif;
     height: 90vmin;
@@ -417,7 +421,7 @@ padding: 2rem;
     transform: translate(-50%, -50%);
     width: 100vmin;
     margin-top: -9rem;
-}
+} */
 dialog#dialog-default1 {
     height: 32rem;
     margin-top: 6rem;
@@ -461,8 +465,16 @@ dialog#dialog-default10 {
     margin-top: 6rem;
 }
 
+} 
+/* @media only screen and (max-width: 330px){
+  body, html{
+    overflow-x: hidden;
+  }
+  .animated-title2 {
+    width: 50vmin;
+    left: 10%;
+    top: 40%;
 }
-@media only screen and (max-width: 370px){
   .animated-title2 > div.text-top2 {
     margin-left: 5rem;
     width: 12rem;
@@ -497,6 +509,6 @@ dialog#dialog-default10 {
     margin-left: -0.5rem;
 }
 
-}
+} */
 
 </style>

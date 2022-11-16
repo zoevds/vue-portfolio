@@ -220,71 +220,35 @@ h2 {
 	 transform: translate(0, -100%);
 }
 
-@media only screen and (max-width: 330px){
+@media only screen and (max-width: 300px){
   body, html{
     overflow-x: hidden;
   }
-  .animated-title2 {
-    color: #222;
-    font-family: 'Playfair Display', serif;
-    height: 90vmin;
-    left: 45%;
-    position: absolute;
-    top: 47%;
-    transform: translate(-50%, -50%);
-    width: 90vmin;
-    margin-top: -9rem;
+  .animated-title {
+    width: 60vmin;
+    left: 0%;
+    top: 67%;
+    font-size: 4rem;
 }
-  #self-image {
-    margin-top: 2.5rem;
-    padding: 20px;
-    width: 200px;
-    height: 200px;
+
+img#self-image {
     margin-right: 0.5rem;
-    margin-bottom: 3rem;
+    margin-top: 6rem;
+    width: 250px;
+    height: 250px;
 }
-.animated-title > div.text-top div span:first-child {
-    color: #767676;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-.animated-title > div div span {
-    display: block;
-    font-size: 1.5rem;
-    margin-left: 3.5rem;
-}
-.animated-title > div.text-bottom div {
-
-    font-size: 1.5rem;
-    margin-left: 3.5rem;
-}
-.animated-title > div.text-top {
-    border-bottom: 0.5vmin solid #000;
-    top: 0;
-   
-    width: 17rem;
-
-    margin-left: 2.5rem;
-   
-    margin-bottom: 2rem;
-}
-#info-head {
-    color: white;
-    font-family: 'Playfair Display', serif;
+h1#info-head {
     font-size: 2rem;
-    padding: 2rem;
 }
-#pgh {
-   
+p#pgh {
     font-size: 1rem;
-    padding: 2rem;
 }
 #description {
    
     margin-right: -1rem;
 }
-#about-btn {
-  margin-right: 3.5rem;
+button#about-btn {
+    width: 100px;
     font-size: 1rem;
 }
 i.fa-brands.fa-linkedin {
@@ -303,7 +267,7 @@ i.fa-brands.fa-linkedin {
     margin-left: 29rem;
 }
  }
-@media only screen and (max-width: 400px){
+/* @media only screen and (max-width: 400px){
   body, html{
     overflow-x: hidden;
   }
@@ -374,42 +338,15 @@ p#pgh {
     margin-left: 5rem;
 }
 } 
+
 @media only screen and (max-width: 479px) {
   .text-effect {
     font-size: 38px;
     line-height: 35px;
   }
-}
-/* @media only screen and (max-width: 330px){
-  body, html{
-    overflow-x: hidden;
-  }
-#self-image {
-    box-shadow: 2px 1px 4px black;
-    margin-top: 5rem;
-    background-position: left top;
-    -o-object-fit: cover;
-    object-fit: cover;
-    padding: 20px;
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    margin-bottom: 3rem;
-    margin-right: -1rem;
-}
-.animated-title {
-    color: #222;
-    font-family: 'Playfair Display', serif;
-    height: 90vmin;
-    left: 20%;
-    position: absolute;
-    top: 80%;
-    transform: translate(-50%, -50%);
-    width: 95vmin;
-  
-}
 } */
-@media only screen and (max-width: 580px) {
+
+/* @media only screen and (max-width: 580px) {
   body, html{
     overflow-x: hidden;
    
@@ -432,6 +369,20 @@ p#pgh {
     font-size: 50px;
   }
 }
+@media only screen and (max-width: 687px) {
+  .animated-title {
+    color: #222;
+    font-family: 'Playfair Display', serif;
+    height: 90vmin;
+    left: 30%;
+    position: absolute;
+    top: 67%;
+    transform: translate(-50%, -50%);
+    width: 60vmin;
+}
+
+
+}
 @media only screen and (max-width: 767px) {
   .text-effect {
     font-size: 65px;
@@ -441,7 +392,7 @@ p#pgh {
   .text-effect {
     font-size: 90px;
   }
-}
+} */
 
 
 /* name animations */
